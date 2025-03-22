@@ -9,7 +9,12 @@ public class Matriz {
       
         for (int i = 0; i < mat2.length; i++) {
             for (int j = 0; j <= i; j++) {
-                mat2[i][j] = s.nextInt(); 
+                if(i == j)
+                     mat2[i][j] = i*j;
+                   else if(i<j)
+                      mat2[i][j] = i-j;
+                   else 
+                     mat2[i][j] = i+j;
         }
      }
 
